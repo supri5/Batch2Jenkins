@@ -16,7 +16,7 @@ public class NewTest {
 	  
 	  
 	 
-	  System.out.println("hello");
+	  System.out.println("code updated");
 	  
 	  ExtentHtmlReporter htmlReporter=new ExtentHtmlReporter("C:\\Users\\Lenovo\\Desktop\\supriya\\Report\\batch.html");
 		ExtentReports report=new ExtentReports();

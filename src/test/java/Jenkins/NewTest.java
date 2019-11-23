@@ -17,17 +17,24 @@ public class NewTest {
 	  
 	 
 	  System.out.println("code updated");
-	  
-	  ExtentHtmlReporter htmlReporter=new ExtentHtmlReporter("C:\\Users\\Lenovo\\Desktop\\supriya\\Report\\batch.html");
-		ExtentReports report=new ExtentReports();
-		report.attachReporter(htmlReporter);
-		ExtentTest logger= report.createTest("Aut_02_login to flight App", "User able to login succsessfully");
-		logger.log(Status.PASS, "URL Launched");
-		logger.log(Status.PASS, "User Name Entered Successfully");
-		logger.log(Status.PASS, "Password Entered Successfully");
-		logger.log(Status.PASS, "Clic on Login");
-		
-		report.flush();
-		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\Desktop\\supriya\\chromedriver.exe");
+		//WebDriver driver=new ChromeDriver();
+	
+ 
+ WebDriver driver=new ChromeDriver();
+ 
+ driver.get("https://www.rblbank.com/");
+ 
+//	  ExtentHtmlReporter htmlReporter=new ExtentHtmlReporter("C:\\Users\\Lenovo\\Desktop\\supriya\\Report\\batch.html");
+//		ExtentReports report=new ExtentReports();
+//		report.attachReporter(htmlReporter);
+//		ExtentTest logger= report.createTest("Aut_02_login to flight App", "User able to login succsessfully");
+//		logger.log(Status.PASS, "URL Launched");
+//		logger.log(Status.PASS, "User Name Entered Successfully");
+//		logger.log(Status.PASS, "Password Entered Successfully");
+//		logger.log(Status.PASS, "Clic on Login");
+//		
+//		report.flush();
+//		
   }
 }
